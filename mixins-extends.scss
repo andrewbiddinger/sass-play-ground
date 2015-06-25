@@ -1,0 +1,39 @@
+@mixin button($color, radius) {
+	radiu: $
+}
+
+$mixin bosom($amount, $position) {
+	padding-#{position}: $amount;
+}
+
+header {
+	@include bosom($amount:14px, $position:top);
+}
+
+
+.bosom-top {
+	padding-top: 10px;
+}
+
+.bosom-top-2 {
+	@extend .bosom-top;
+	padding-bottom: 2px;
+}
+
+%module {
+	backgroun-image: dude;
+	h2 {
+	font-size: big;
+
+	}
+}
+
+.module-2{
+	@extend %module;
+	text-green: doda;
+}
+
+.module-2{
+	@extend %module;
+	text-blue: doda;
+}
